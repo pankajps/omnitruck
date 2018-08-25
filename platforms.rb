@@ -59,6 +59,12 @@ platform "darwin" do
   remap "mac_os_x"
 end
 
+platform "opensuseleap" do
+  major_only true
+  remap "sles"
+end
+
+# this is the legacy name install.sh passed. opensuseleap is the current name
 platform "suse" do
   major_only true
   remap "sles"
